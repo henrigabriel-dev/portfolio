@@ -1,0 +1,34 @@
+// Mixin para media queries
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == 'sm' {
+        @media (min-width: 576px) { @content; }
+    } @else if $breakpoint == 'md' {
+        @media (min-width: 768px) { @content; }
+    } @else if $breakpoint == 'lg' {
+        @media (min-width: 992px) { @content; }
+    } @else if $breakpoint == 'xl' {
+        @media (min-width: 1200px) { @content; }
+    }
+}
+
+// Mixin para flexbox
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Mixin para transições
+@mixin transition($property: all, $duration: 0.3s, $ease: ease-in-out) {
+    transition: $property $duration $ease;
+}
+
+// Mixin para sombras
+@mixin box-shadow($shadow...) {
+    box-shadow: $shadow;
+}
+
+// Mixin para border-radius
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
