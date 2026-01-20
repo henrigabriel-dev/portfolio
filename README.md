@@ -1,1 +1,1 @@
-Meu portifólio, feito para apresentação.
+Meu portfólio, feito para apresentação.
